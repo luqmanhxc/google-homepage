@@ -11,7 +11,13 @@ a {
     text-decoration: none;
 }
 
-/****************** NAVIGATION BAR ************************/
+body {
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+/*NAVIGATION BAR*/
 
 nav {
     display: flex;
@@ -19,7 +25,7 @@ nav {
     flex-direction: row;
     list-style-type: none;
     height: 48px;
-    padding: 6px;
+    padding: 6px 15px;
     align-items: center;
 }
 
@@ -38,11 +44,11 @@ nav {
     padding-left: 15px;
 }
 
-#nav-list > li > a:link, :visited {
-    color: #212121;
+a:link, :visited {
+    color: #797881;
 }
 
-#nav-list > li > a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -56,10 +62,19 @@ nav {
 .nav-right > img {
     width: 24px;
     height: 24px;
-    padding-right: 15px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-/********MAIN***********/
+.nav-right img:hover {
+    background-color: #F3F3F2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+/*MAIN*/
 
 #logo {
     display: flex;
@@ -86,9 +101,17 @@ nav {
     border-radius: 50px;
 }
 
+#search-wrap:focus {
+    box-shadow: 2px 2px;
+}
+
 input {
     height: 34px;
     width: 487px;
+    border: 0;
+}
+
+input:focus-within {
     border: 0;
 }
 
@@ -142,11 +165,14 @@ input {
     text-decoration: underline;
 }
 
-/********FOOTER********/
+/*FOOTER*/
 
 footer {
     background: #F3F3F2;
     position: absolute;
+    right: 0; 
+    bottom: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -188,8 +214,4 @@ footer {
 #right-section > ul > li {
     padding: 15px;
     display: block;
-}
-
-a:link {
-    color: #797881;
 }
