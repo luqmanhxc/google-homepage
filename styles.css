@@ -73,7 +73,6 @@ a:hover {
 }
 
 
-
 /*MAIN*/
 
 #logo {
@@ -101,14 +100,15 @@ a:hover {
     border-radius: 50px;
 }
 
-#search-wrap:focus {
-    box-shadow: 2px 2px;
+#search-wrap:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 input {
     height: 34px;
     width: 487px;
     border: 0;
+    outline: 0;
 }
 
 input:focus-within {
@@ -131,6 +131,10 @@ input:focus-within {
     display: flex;
     justify-content: center;
     margin: 18px 0;
+}
+
+.btn-style:hover {
+    border: 1px solid rgb(221, 221, 221);
 }
 
 .btn-style {
@@ -190,6 +194,7 @@ footer {
     align-items: center;
     padding: 0 20px;
     height: 46px;
+    font-family: arial,sans-serif;
 }
 
 #left-section > ul {
